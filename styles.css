@@ -263,7 +263,7 @@ nav a:focus {
 .article-banner {
     width: 100%;
     padding: 200px 10px 50px;
-    background-image: url(images/Tshirt-banner.jpg);
+    background-image: url(.../images/Tshirt-banner.jpg);
     background-position: center;
     margin: 2em 0;
 }
