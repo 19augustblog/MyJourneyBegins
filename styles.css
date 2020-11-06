@@ -263,7 +263,7 @@ nav a:focus {
 .article-banner {
     width: 100%;
     padding: 200px 10px 50px;
-    background-image: url(.../images/Tshirt-banner.jpg);
+    background-blend-mode: multiply;
     background-position: center;
     margin: 2em 0;
 }
@@ -336,4 +336,61 @@ nav a:focus {
     .two-columns-image * {
         width: 45%;
     }
+}
+
+/* ARTICLE ENGAGEMENT */
+.article-engagement{
+    width: 80%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    margin: 2em auto 4em;
+    font-size: .5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--brown);
+    padding-bottom: 1em;
+}
+.article-comment,
+.article-like,
+.article-share{
+    display: flex;
+    /* border: 1px solid red; */
+}
+.like-share-icon {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    margin-right: 1em;
+}
+
+/* ARTICLE AUTHOR */
+.article-author {
+    text-align: center;
+    margin: 2em auto;
+    width: 70%;
+}
+.article-author-image {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 1em;
+}
+.article-author-name {
+    margin: .25em 0;
+    color: var(--dbeige);
+    font-size: 2rem;
+    font-family:'Reenie Beanie', sans-serif ;
+}
+.article-author-intro {
+    font-size: .75rem;
+    
+}
+.follow-me-icons{
+    margin-top: .75em;
+}
+.follow-me-icon {
+    width: 13px;
+    height: 13px;
+    object-fit: cover;
 }
