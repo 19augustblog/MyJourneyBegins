@@ -363,7 +363,11 @@ nav a:focus {
     object-fit: cover;
     margin-right: 1em;
 }
-
+@media (min-width: 600px){
+    .article-engagement{
+        width: 50%;
+    }
+}
 /* ARTICLE AUTHOR */
 .article-author {
     text-align: center;
@@ -384,7 +388,6 @@ nav a:focus {
 }
 .article-author-intro {
     font-size: .75rem;
-    
 }
 .follow-me-icons{
     margin-top: .75em;
@@ -393,4 +396,18 @@ nav a:focus {
     width: 13px;
     height: 13px;
     object-fit: cover;
+}
+@media (min-width: 600px){
+    .article-author-image {
+        width: 20%;
+    }
+    .article-author-intro {
+        width: 50%;
+        margin: auto;
+    }
+}
+@media (min-width: 800px){
+    .article-author-image {
+        width: 15%;
+    }
 }
