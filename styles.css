@@ -264,6 +264,7 @@ nav a:focus {
 .article-banner {
     width: 100%;
     padding: 200px 10px 50px;
+    background-image: url(/images/Tshirt-banner.jpg), linear-gradient(135deg, rgba(217,189,173,1) 47%, rgba(115,71,67,1) 100%);
     background-blend-mode: multiply;
     background-position: center;
     margin: 2em 0;
