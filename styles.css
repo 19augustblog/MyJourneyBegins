@@ -135,6 +135,7 @@ nav a:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5em;
 }
 .post {
     width: 70%;
