@@ -264,7 +264,6 @@ nav a:focus {
 .article-banner {
     width: 100%;
     padding: 200px 10px 50px;
-    background-image: url(/images/Tshirt-banner.jpg), linear-gradient(135deg, rgba(217,189,173,1) 47%, rgba(115,71,67,1) 100%);
     background-blend-mode: multiply;
     background-position: center;
     margin: 2em 0;
@@ -304,7 +303,9 @@ nav a:focus {
     text-align: justify;
     line-height: 1.6;
 }
-
+.article-section p {
+    margin-bottom: 1em;
+}
 .article-sub {
     font-family: 'montserrat', sans-serif;
     font-size: 1.25rem;
@@ -340,6 +341,34 @@ nav a:focus {
     }
 }
 
+.article-quote {
+    width: 60%;
+    margin: 1em auto .5em;
+    font-family: pangolin;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    color: var(--brown);
+    font-style: italic;
+    text-align: center;
+}
+.article-quote-author{
+    width: 30%;
+    margin: 0 auto 1em;
+    font-family: pangolin;
+    font-size: 1rem;
+    color: var(--dbeige);
+    font-style: italic;
+    text-align: center;
+}
+
+/* font-size: 
+Raleway (body),
+Homemade Apple (logo), 
+Reenie&Beanie (nav),
+Montserrat (post info), 
+Playfair Display SC (article title)
+Podkova (article tag), 
+Open Sans (article content) */
 /* ARTICLE ENGAGEMENT */
 .article-engagement{
     width: 80%;
