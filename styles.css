@@ -178,6 +178,7 @@ nav a:focus {
 @media (min-width: 600px) {
     .posts{
         flex-flow: row wrap;
+        align-items: stretch;
         justify-content: center;
     }
     .post {
@@ -202,6 +203,7 @@ nav a:focus {
     width: 80%;
     margin: 1em auto;
     text-align: center;
+    padding-bottom: 1em;
 }
 .preview-image {
     width: 100%;
@@ -215,6 +217,7 @@ nav a:focus {
     .article-previews{
         flex-direction: row;
         flex-wrap: wrap;
+        align-items:flex-start;
     }
     .article-preview {
         width: 45%;
