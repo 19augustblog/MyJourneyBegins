@@ -361,17 +361,10 @@ nav a:focus {
     text-align: center;
 }
 
-/* font-size: 
-Raleway (body),
-Homemade Apple (logo), 
-Reenie&Beanie (nav),
-Montserrat (post info), 
-Playfair Display SC (article title)
-Podkova (article tag), 
-Open Sans (article content) */
+
 /* ARTICLE ENGAGEMENT */
 .article-engagement{
-    width: 80%;
+    width: 100%;
     /* border: 1px solid blue; */
     display: flex;
     justify-content: space-between;
@@ -396,7 +389,7 @@ Open Sans (article content) */
 }
 @media (min-width: 600px){
     .article-engagement{
-        width: 50%;
+        width: 70%;
     }
 }
 /* ARTICLE AUTHOR */
