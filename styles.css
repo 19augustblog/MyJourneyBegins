@@ -31,9 +31,9 @@ h1{
     font-size: 3rem;
 }
 h2 {
-    font-family: 'reenie beanie', cursive;
-    font-size: 2rem;
-    margin-bottom: 1.5em;
+    /* font-family: 'reenie beanie', cursive; */
+    font-size: 1.3rem;
+    margin-bottom: 1em;
     text-align: center;
 }
 
