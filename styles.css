@@ -82,17 +82,12 @@ footer p {
 nav {
     margin-top: 1em;
     font-family: 'Podkova', 'reenie beanie', cursive;
-    font-size: .75rem;
+    font-size: 1rem;
     border-bottom: .5px dashed var(--brown);
-    border-top: .5px dashed var(--brown);
+    /* border-top: .5px dashed var(--brown); */
     padding: .5em 0;
 }
 
-@media (min-width: 800px) {
-    nav {
-        font-size: 1.75rem;
-    }
-}
 nav ul {
     display: flex;
     flex-direction: row;
@@ -121,16 +116,30 @@ nav a:focus {
     border-top: 1px solid var(--dbeige);
     border-bottom:  1px solid var(--dbeige);
 }
+@media (max-width: 400px) {
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media (min-width: 650px) {
     nav li{
         margin: 0 1em;
     }
 }
 
-@media (max-width: 400px) {
-    nav ul{
-        flex-direction: column;
-        align-items: center;
+@media (min-width: 800px) {
+    nav {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1100px) {
+    nav {
+        font-size: 1.25rem;
+        width: 60%;
     }
 }
 
@@ -270,7 +279,7 @@ nav a:focus {
     display: flex;
     flex-direction: column;
     align-items:center;
-    margin: 3em auto;
+    margin: 1em auto;
 }
 .card {
     width: 80%;
@@ -287,9 +296,10 @@ nav a:focus {
     padding-top: none;
 }
 .card-img {
-    width: 100%;
-    height: 200px;
     object-fit: cover;
+    flex-basis: 200px;
+    min-width: 0;
+    min-height: 0;
 }
 .card-content {
     margin: 1em;
@@ -302,16 +312,18 @@ nav a:focus {
     color: var(--grey)
 }
 .card-read-time span {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .card-footer {
     display: flex;
     justify-content: space-between;
+    align-content: flex-end;
     align-items: flex-end;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 .card-read-time {
-    line-height: 16px;
+    font-size: .6rem;
+    line-height: 14px;
     padding-right: .5em;
     border-right: solid 1px var(--brown);
     margin: 0
@@ -323,6 +335,52 @@ nav a:focus {
     color: white;
 }
 
+@media (min-width: 600px) {
+    .cards-previews {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card {
+        width: 47%;
+    }
+    .card-content {
+        margin-top: 0;
+    }
+    .card:nth-child(2) {
+        border-top: none;
+        padding-top: none;
+    }
+}
+@media (min-width: 800px) {
+    .card {
+        flex-direction: row;
+    }
+    .card-img {
+        height: 300px;
+    }
+    .card-content {
+        width: 70%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .card-footer {
+        margin-top: auto;
+    }
+}
+@media (min-width: 1200px) {
+    .card-footer{
+        /* margin-top: 2.5em; */
+    }
+    .card-img {
+        height: 230px;
+    }
+    .card-content {
+        height: 230px;
+    }
+}
 /* ARTICLES */
 .article {
     font-family: 'Open Sans', sans-serif;
