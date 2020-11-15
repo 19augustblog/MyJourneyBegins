@@ -147,32 +147,37 @@ nav a:focus {
     height: 250px;
     object-fit: cover;
 }
-.post-info {
+.post-info,
+.card-info {
     font-family: 'montserrat', sans-serif;
     font-size: .6rem;
     margin: .5em 0;
     color: var(--dbeige)
 }
-.post-title {
+.post-title,
+.card-title {
     font-size: 1rem;
     letter-spacing: 1px;
     color: var(--dblack);
 }
-.post-body {
+.post-body{
     font-size: .75rem;
     line-height: 1.6;
     letter-spacing: .5px;
     color: var(--grey);
     margin: .5em 0;
 }
-.post-read-more {
+.post-read-more,
+.card-btn {
     font-size: .75rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--beige);
 }
 .post-read-more:hover,
-.post-read-more:focus {
+.post-read-more:focus,
+.card-btn:hover,
+.card-btn:focus {
     color: var(--brown)
 }
 @media (min-width: 600px) {
@@ -253,6 +258,67 @@ nav a:focus {
 .preview-read-more:hover {
     transform: scale(1.1);
 }
+
+/* CARDS PREVIEW */
+/* some typographies of the children elements can be
+ found at the CSS part of home page */
+.cards-previews {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 3em auto;
+}
+.card {
+    width: 80%;
+    text-align: center;
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--brown);
+    padding-top: 2em;
+    /* background-color: pink; */
+}
+.card:first-child {
+    border-top: none;
+    padding-top: none;
+}
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content {
+    margin: 1em;
+    color: var(--brown);
+    font-size: .75rem;
+    line-height: 1.6;
+    letter-spacing: .5px;
+}
+.card-info {
+    color: var(--grey)
+}
+.card-read-time span {
+    font-size: 1.5rem;
+}
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 1em;
+}
+.card-read-time {
+    line-height: 16px;
+    padding-right: .5em;
+    border-right: solid 1px var(--brown);
+    margin: 0
+}
+.card-btn {
+    text-decoration: none;
+    background-color:var(--beige);
+    padding: .5em 1.5em;
+    color: white;
+}
+
 /* ARTICLES */
 .article {
     font-family: 'Open Sans', sans-serif;
